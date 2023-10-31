@@ -22,6 +22,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	}
 
 	/* Allocate values to the node */
+ new_node->parent = parent;
 	new_node->n = value;
 	new_node->left = NULL;
 	new_node->right = NULL;
